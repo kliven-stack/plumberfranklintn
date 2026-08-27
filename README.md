@@ -172,8 +172,10 @@ Everything is in `.env.example`. Two notes specific to this site:
   default: *"Thanks for contacting us! We will get in touch with you shortly."* If
   the client had customised it, paste the real text into `CONFIRMATION` in
   `src/actions/index.ts`.
-* **`SITE_OWNER_EMAIL` is unknown.** Gravity Forms' notification address is admin
-  data too. It has to come from the client.
+* **`SITE_OWNER_EMAIL` is `support@blendmode.com`.** Gravity Forms' own
+  notification address is admin data and could not be read from any served page,
+  so leads go to BlendMode rather than being guessed at. Change it in the Vercel
+  project (and redeploy) if the client wants them delivered somewhere else.
 
 `npm run form` covers everything the playbook's §6 checklist can automate:
 validation, the honeypot, the rate limit, the CAPTCHA (accepted, rejected,
@@ -198,7 +200,7 @@ nothing, and logs a loud warning that CAPTCHA verification is being skipped.
 | `DATABASE_URL` | injected by the Neon integration; do not set it by hand on Vercel |
 | `POSTMARK_SERVER_TOKEN` | this client's Postmark Server token |
 | `POSTMARK_FROM_EMAIL` | an address on a domain verified in Postmark |
-| `SITE_OWNER_EMAIL` | where leads are delivered |
+| `SITE_OWNER_EMAIL` | where leads are delivered — `support@blendmode.com` |
 | `TURNSTILE_SECRET_KEY` | Turnstile secret |
 | `PUBLIC_TURNSTILE_SITE_KEY` | Turnstile site key — the only value that may reach the browser |
 | `IP_HASH_SALT` | salts the one-way hash of the submitter's IP; the raw address is never stored |
