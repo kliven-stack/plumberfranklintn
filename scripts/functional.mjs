@@ -508,18 +508,38 @@ const open = async (target, width = 1440, height = 900) => {
 
 /* --------------------------------------------------------------- search */
 {
-  const { ctx, page } = await open('/?s=leak');
+  const { ctx, page } = await open('/search/?s=leak');
   const search = await page.evaluate(() => ({
     heading: document.querySelector('h1.elementor-heading-title')?.textContent.trim(),
     title: document.title,
     input: document.querySelector('input[name="s"]')?.value,
+    action: document.querySelector('form.elementor-search-form')?.getAttribute('action'),
     nothing: !!document.querySelector('.elementor-posts-nothing-found'),
   }));
-  check('search: /?s= is rewritten onto the search template', !!search.nothing);
   check('search: the term reaches the heading', search.heading === 'Search Results for: leak', search.heading);
   check('search: the term reaches the document title', /“leak”/.test(search.title), search.title);
   check('search: the term is put back in the input', search.input === 'leak', search.input);
+  check('search: the widgets target /search/', search.action === '/search/', search.action);
   check('search: it finds nothing, exactly as production does', search.nothing);
+  await ctx.close();
+}
+
+/* ------------------------------------------------- search: the legacy URL */
+{
+  // WordPress served `/?s=<term>`. Vercel matches `index.html` for that path
+  // before it ever looks at vercel.json's rewrites — which is why the rewrite this
+  // project first shipped did nothing on the deployment while passing locally.
+  // The runtime forwards it instead; this asserts the forward, and that the
+  // starting point really is the home page, so the harness cannot drift from
+  // Vercel's behaviour again.
+  const { ctx, page } = await open('/?s=leak');
+  await page.waitForURL('**/search/**', { timeout: 10000 }).catch(() => {});
+  const url = new URL(page.url());
+  check('search: /?s= is forwarded to /search/, preserving the term',
+    url.pathname === '/search/' && url.searchParams.get('s') === 'leak', page.url());
+  const heading = await page.evaluate(() =>
+    document.querySelector('h1.elementor-heading-title')?.textContent.trim());
+  check('search: and the forwarded page shows the term', heading === 'Search Results for: leak', heading);
   await ctx.close();
 }
 

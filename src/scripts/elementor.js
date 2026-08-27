@@ -1200,6 +1200,25 @@ function initAnchors() {
 }
 
 /* ------------------------------------------------------------------ *
+ * Legacy search URLs
+ *
+ * WordPress served its results from `/?s=<term>`, and the search widgets now post
+ * to `/search/` instead — see `retargetSearchForms` in scripts/extract.mjs for why
+ * a vercel.json rewrite could not do the job.
+ *
+ * That leaves the old URL, which is still in browser histories and bookmarks and
+ * may sit in a stray inbound link. Vercel serves `index.html` for it, so this
+ * forwards it. `replace` rather than `assign`, so the back button does not bounce
+ * between the two.
+ * ------------------------------------------------------------------ */
+function initLegacySearchUrl() {
+  if (location.pathname !== '/') return;
+  const term = new URLSearchParams(location.search).get('s');
+  if (term === null) return;
+  location.replace(`/search/?s=${encodeURIComponent(term)}`);
+}
+
+/* ------------------------------------------------------------------ *
  * Copyright year
  *
  * The footer reads "Copyright (c) 2026", and WordPress renders that year on every
@@ -1284,6 +1303,7 @@ onReady(() => {
   initPopups();
   initLightbox();
   initAnchors();
+  initLegacySearchUrl();
   initCopyrightYear();
   initTrailingNodes();
 });

@@ -111,17 +111,22 @@ WordPress is guaranteed to miss. Astro emits it at `404.html`, which Vercel serv
 for any unmatched path.
 
 **`/search/`** is WordPress's search results page. WordPress answers `/?s=<term>`,
-so losing that URL would be a regression (playbook §1); `vercel.json` rewrites the
-query form onto this route, and the search widgets — on `/404/`, on the author
-archive and on this page itself — keep the `action="/"` WordPress gave them.
-Vercel matches static files before it looks at query strings, so without that
-rewrite `/?s=leak` would quietly serve the home page. (The rule in `vercel.json`
-carries no comment explaining itself, because Vercel's project-import validator
-rejects the `"//key"` pseudo-comment convention: *"should NOT have additional
-property"*. The explanation lives in `src/pages/search.astro` instead.) The
-template was captured with a fixed probe term, and `src/pages/search.astro` puts the
-real term back into the heading, the input and the document title. **It always finds
-nothing — see bug 4.**
+so losing that URL would be a regression (playbook §1). The search widgets — on
+`/404/`, on the author archive and on this page itself — are retargeted at
+`/search/`, and `src/scripts/elementor.js` forwards any inbound `/?s=` to it, so the
+old URL keeps working. The template was captured with a fixed probe term, and
+`src/pages/search.astro` puts the real term back into the heading, the input and the
+document title. **It always finds nothing — see bug 4.**
+
+> This was first built as a `vercel.json` rewrite from `/` with a `?s` query
+> condition, and **that does not work.** Vercel checks the filesystem before it
+> applies vercel.json rewrites, and `/` matches `index.html` — the query string
+> plays no part in the match — so the rewrite never ran and `/?s=leak` served the
+> home page. It passed locally only because `scripts/serve.mjs` was applying
+> rewrites *first*. Both are fixed: the rewrite is gone, and serve.mjs now resolves
+> rewrites only after the file lookup misses, so the harness cannot hide this class
+> of bug again. Caught on the first deployment, which is exactly what playbook §3.5
+> says to expect.
 
 ---
 

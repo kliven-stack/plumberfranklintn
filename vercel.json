@@ -27,18 +27,6 @@
       ]
     }
   ],
-  "rewrites": [
-    {
-      "source": "/",
-      "has": [
-        {
-          "type": "query",
-          "key": "s"
-        }
-      ],
-      "destination": "/search/"
-    }
-  ],
   "redirects": [
     {
       "source": "/wp-sitemap.xml",

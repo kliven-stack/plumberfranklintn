@@ -188,9 +188,30 @@ function rewireForm($, $el) {
   $el.find('iframe[id^="gform_ajax_frame_"]').remove();
 }
 
+/**
+ * Point the search widgets at /search/ instead of at /.
+ *
+ * WordPress served its results from `/?s=<term>`, and the first attempt at keeping
+ * that URL alive was a `vercel.json` rewrite from `/` with a `?s` query condition.
+ * It does nothing. Vercel checks the filesystem *before* it applies vercel.json
+ * rewrites, and `/` matches `index.html` — query strings play no part in that
+ * match — so `/?s=leak` served the home page on the deployment while passing
+ * locally, because scripts/serve.mjs was applying rewrites first. Both have been
+ * corrected: the rewrite is gone, and serve.mjs now matches Vercel's order.
+ *
+ * So the form's own target moves. The visible behaviour is identical — type a term,
+ * get the results page — and the URL gains one path segment. Inbound `/?s=` links
+ * still work: src/scripts/elementor.js forwards them.
+ */
+function retargetSearchForms($, $el) {
+  $el.find('form.elementor-search-form[action="/"], form.elementor-search-form[action="' + ORIGIN + '"]')
+    .attr('action', '/search/');
+}
+
 function cleanFragment($, $el) {
   unlazy($, $el);
   rewireForm($, $el);
+  retargetSearchForms($, $el);
   // Every script inside the ported markup is WordPress/Elementor/Gravity Forms
   // plumbing — this site embeds no third-party widget that has to keep running.
   // (The one external script the pages load, Google's reCAPTCHA, belongs to the

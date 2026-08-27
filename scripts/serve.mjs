@@ -39,11 +39,11 @@ createServer(async (req, res) => {
   // which is the canonical form WordPress served. Both spellings are now listed in
   // vercel.json; this matcher stays strict so that dropping one fails
   // `npm run functional` instead of production.
-  const matchesSource = (source) => {
+  const matchesSource = (source, pathname = url.pathname) => {
     const body = source.includes('(')
       ? source
       : source.replace(/[.+?^${}|[\]\\]/g, '\\$&').replace(/:[a-zA-Z_][\w]*\*/g, '.*').replace(/:[a-zA-Z_][\w]*/g, '[^/]+');
-    return new RegExp('^' + body + '$').test(url.pathname);
+    return new RegExp('^' + body + '$').test(pathname);
   };
 
   const hit = redirects.find((r) => {
@@ -57,13 +57,18 @@ createServer(async (req, res) => {
     return;
   }
 
-  // Rewrites, matched the same way — same source patterns, same `has` conditions,
-  // but serving the destination rather than redirecting to it. `/?s=term` is the
-  // one this site needs (see vercel.json).
-  const rewrite = rewrites.find((r) => matchesSource(r.source) && (r.has ?? []).every((h) => h.type === 'query' && url.searchParams.has(h.key)));
-  const servePath = rewrite ? rewrite.destination : url.pathname;
+  // Rewrites — and the ORDER here is the whole point, because getting it wrong
+  // hid a real bug. Vercel applies vercel.json's `rewrites` only *after* the
+  // filesystem misses; a path that matches a static file is served and the rewrite
+  // never runs. An earlier version of this file applied rewrites first, which made
+  // a `/` + `?s` rewrite look like it worked locally while the deployment quietly
+  // served the home page. Rewrites are therefore resolved below, only once the
+  // file lookup has failed.
+  const rewriteFor = (pathname) => rewrites.find((r) =>
+    matchesSource(r.source, pathname)
+    && (r.has ?? []).every((h) => h.type === 'query' && url.searchParams.has(h.key)));
 
-  let file = path.join(ROOT, decodeURIComponent(servePath));
+  let file = path.join(ROOT, decodeURIComponent(url.pathname));
   try {
     if ((await stat(file)).isDirectory()) file = path.join(file, 'index.html');
   } catch {
@@ -91,6 +96,19 @@ createServer(async (req, res) => {
     res.writeHead(200, { 'content-type': type, 'accept-ranges': 'bytes' });
     res.end(body);
   } catch {
+    // The filesystem missed, which is the point at which Vercel consults
+    // vercel.json's rewrites.
+    const rewrite = rewriteFor(url.pathname);
+    if (rewrite) {
+      try {
+        const target = path.join(ROOT, decodeURIComponent(rewrite.destination), 'index.html');
+        const body = await readFile(target);
+        res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
+        res.end(body);
+        return;
+      } catch { /* destination missing — fall through to the 404 */ }
+    }
+
     // Same as Vercel: unmatched paths get the site's own 404 page.
     let body = '<!doctype html><title>404</title>Not found';
     try { body = await readFile(path.join(ROOT, '404.html')); } catch { /* not built yet */ }
