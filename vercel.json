@@ -27,7 +27,6 @@
       ]
     }
   ],
-  "//rewrites": "WordPress answered /?s=<term> with its search results page. Vercel ignores query strings when it matches a static file, so the rewrite is what keeps that URL alive — the two search widgets still carry the action=\"/\" WordPress gave them, and src/pages/search.astro fills the term in from the query string.",
   "rewrites": [
     {
       "source": "/",

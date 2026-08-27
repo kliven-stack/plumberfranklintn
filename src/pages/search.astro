@@ -3,8 +3,15 @@
  * WordPress's search results page.
  *
  * `/?s=<term>` is a URL the WordPress site answers, so losing it after cutover
- * would be a regression (playbook §1) — vercel.json rewrites it here, and the two
+ * would be a regression (playbook §1) — vercel.json rewrites it here, and the
  * search forms keep the `action="/"` WordPress gave them.
+ *
+ * That rewrite is the reason this route exists, and the reason is written here
+ * rather than beside it: vercel.json is strict JSON, and Vercel's project-import
+ * validator rejects the `"//key": "…"` pseudo-comment convention outright
+ * ("should NOT have additional property"). So the rule there is bare, and this is
+ * the note that explains it. Vercel matches static files before query strings, so
+ * without the rewrite `/?s=leak` would quietly serve the home page.
  *
  * What it renders is archive template 179, the same one the author archive uses,
  * captured from production with a fixed probe term. The term is the only part of

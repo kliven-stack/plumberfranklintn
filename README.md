@@ -113,7 +113,12 @@ for any unmatched path.
 **`/search/`** is WordPress's search results page. WordPress answers `/?s=<term>`,
 so losing that URL would be a regression (playbook §1); `vercel.json` rewrites the
 query form onto this route, and the search widgets — on `/404/`, on the author
-archive and on this page itself — keep the `action="/"` WordPress gave them. The
+archive and on this page itself — keep the `action="/"` WordPress gave them.
+Vercel matches static files before it looks at query strings, so without that
+rewrite `/?s=leak` would quietly serve the home page. (The rule in `vercel.json`
+carries no comment explaining itself, because Vercel's project-import validator
+rejects the `"//key"` pseudo-comment convention: *"should NOT have additional
+property"*. The explanation lives in `src/pages/search.astro` instead.) The
 template was captured with a fixed probe term, and `src/pages/search.astro` puts the
 real term back into the heading, the input and the document title. **It always finds
 nothing — see bug 4.**
