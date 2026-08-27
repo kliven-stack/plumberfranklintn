@@ -1,0 +1,177 @@
+[
+  {
+    "url": "https://plumberfranklintn.com/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/",
+    "slug": "index",
+    "redirect": false,
+    "fromSitemap": true
+  },
+  {
+    "url": "https://plumberfranklintn.com/about-us/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/about-us/",
+    "slug": "about-us",
+    "redirect": false,
+    "fromSitemap": true
+  },
+  {
+    "url": "https://plumberfranklintn.com/plumbing/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/plumbing/",
+    "slug": "plumbing",
+    "redirect": false,
+    "fromSitemap": true
+  },
+  {
+    "url": "https://plumberfranklintn.com/plumbing/emergency-plumbing/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/plumbing/emergency-plumbing/",
+    "slug": "plumbing__emergency-plumbing",
+    "redirect": false,
+    "fromSitemap": true
+  },
+  {
+    "url": "https://plumberfranklintn.com/plumbing/leak-detection/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/plumbing/leak-detection/",
+    "slug": "plumbing__leak-detection",
+    "redirect": false,
+    "fromSitemap": true
+  },
+  {
+    "url": "https://plumberfranklintn.com/plumbing/leak-repairs/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/plumbing/leak-repairs/",
+    "slug": "plumbing__leak-repairs",
+    "redirect": false,
+    "fromSitemap": true
+  },
+  {
+    "url": "https://plumberfranklintn.com/plumbing/pipe-repairs/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/plumbing/pipe-repairs/",
+    "slug": "plumbing__pipe-repairs",
+    "redirect": false,
+    "fromSitemap": true
+  },
+  {
+    "url": "https://plumberfranklintn.com/plumbing/toilets-faucets-sinks/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/plumbing/toilets-faucets-sinks/",
+    "slug": "plumbing__toilets-faucets-sinks",
+    "redirect": false,
+    "fromSitemap": true
+  },
+  {
+    "url": "https://plumberfranklintn.com/plumbing/slab-leak-detection/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/plumbing/slab-leak-detection/",
+    "slug": "plumbing__slab-leak-detection",
+    "redirect": false,
+    "fromSitemap": true
+  },
+  {
+    "url": "https://plumberfranklintn.com/plumbing/sewer-repair/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/plumbing/sewer-repair/",
+    "slug": "plumbing__sewer-repair",
+    "redirect": false,
+    "fromSitemap": true
+  },
+  {
+    "url": "https://plumberfranklintn.com/plumbing/sewer-replacement/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/plumbing/sewer-replacement/",
+    "slug": "plumbing__sewer-replacement",
+    "redirect": false,
+    "fromSitemap": true
+  },
+  {
+    "url": "https://plumberfranklintn.com/drains/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/drains/",
+    "slug": "drains",
+    "redirect": false,
+    "fromSitemap": true
+  },
+  {
+    "url": "https://plumberfranklintn.com/drains/drain-cleaning/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/drains/drain-cleaning/",
+    "slug": "drains__drain-cleaning",
+    "redirect": false,
+    "fromSitemap": true
+  },
+  {
+    "url": "https://plumberfranklintn.com/drains/camera-inspection/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/drains/camera-inspection/",
+    "slug": "drains__camera-inspection",
+    "redirect": false,
+    "fromSitemap": true
+  },
+  {
+    "url": "https://plumberfranklintn.com/water-heaters/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/water-heaters/",
+    "slug": "water-heaters",
+    "redirect": false,
+    "fromSitemap": true
+  },
+  {
+    "url": "https://plumberfranklintn.com/water-heaters/conventional-water-heaters/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/water-heaters/conventional-water-heaters/",
+    "slug": "water-heaters__conventional-water-heaters",
+    "redirect": false,
+    "fromSitemap": true
+  },
+  {
+    "url": "https://plumberfranklintn.com/water-heaters/tankless-water-heaters/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/water-heaters/tankless-water-heaters/",
+    "slug": "water-heaters__tankless-water-heaters",
+    "redirect": false,
+    "fromSitemap": true
+  },
+  {
+    "url": "https://plumberfranklintn.com/contact-us/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/contact-us/",
+    "slug": "contact-us",
+    "redirect": false,
+    "fromSitemap": true
+  },
+  {
+    "url": "https://plumberfranklintn.com/our-team/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/our-team/",
+    "slug": "our-team",
+    "redirect": false,
+    "fromSitemap": true
+  },
+  {
+    "url": "https://plumberfranklintn.com/author/relplumbin/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/author/relplumbin/",
+    "slug": "author__relplumbin",
+    "redirect": false,
+    "fromSitemap": true
+  },
+  {
+    "url": "https://plumberfranklintn.com/xmlrpc.php/",
+    "status": 403,
+    "finalUrl": "https://plumberfranklintn.com/xmlrpc.php/",
+    "slug": "xmlrpc.php",
+    "redirect": false,
+    "fromSitemap": false
+  },
+  {
+    "url": "https://plumberfranklintn.com/404/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/404/",
+    "slug": "404",
+    "fromSitemap": false
+  }
+]

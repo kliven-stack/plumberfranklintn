@@ -1,0 +1,38 @@
+{
+  "name": "plumberfranklintn",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "astro": "astro",
+    "serve": "node scripts/serve.mjs",
+    "crawl": "node scripts/crawl.mjs",
+    "css": "node scripts/fetch-css.mjs",
+    "fonts": "node scripts/build-fonts.mjs",
+    "extract": "node scripts/extract.mjs",
+    "media": "node scripts/fetch-media.mjs",
+    "images": "node scripts/optimize-images.mjs",
+    "compare": "node scripts/compare.mjs",
+    "functional": "node scripts/functional.mjs",
+    "audit": "node scripts/audit.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
+    "@astrojs/vercel": "^8.2.11",
+    "@neondatabase/serverless": "^1.0.2",
+    "@tailwindcss/vite": "^4.1.18",
+    "astro": "^5.16.2",
+    "sharp": "^0.34.4",
+    "tailwindcss": "^4.1.18",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "cheerio": "^1.1.2",
+    "playwright": "^1.56.1"
+  }
+}

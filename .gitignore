@@ -1,0 +1,32 @@
+# build output
+dist/
+.astro/
+.vercel/
+
+# dependencies
+node_modules/
+
+# environment
+.env
+.env.production
+
+# system
+.DS_Store
+*.log
+
+# crawl cache — regenerate with `npm run crawl`
+_extract/html/
+_extract/live-dom/
+
+# measurement output — regenerate with `npm run compare`
+_extract/compare-*.json
+_extract/dump-*.json
+_extract/spot-*.json
+_extract/probe/
+
+# `_extract/crawl-manifest.json` and `_extract/assets.json` ARE tracked: they
+# record what the crawl found and what the mirror pulled, which is the provenance
+# of everything in src/fragments/ and public/wp-content/.
+
+# probe scripts are scratch — the contracts they found are documented in the code
+_extract/probe/

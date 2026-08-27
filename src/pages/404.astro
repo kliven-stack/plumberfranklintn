@@ -1,0 +1,13 @@
+---
+/**
+ * The theme's own "page can't be found" template, so a missing URL looks like the
+ * rest of the site instead of the host's default error page. Astro emits this at
+ * dist/404.html, which Vercel serves for any unmatched path.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { pages, type PageRecord } from '../lib/pages';
+
+const page = pages.find((p) => p.path === '/404/') as PageRecord;
+---
+
+<BaseLayout page={{ ...page, robots: 'noindex, follow' }} />

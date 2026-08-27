@@ -1,0 +1,21 @@
+---
+/**
+ * One route renders every cloned WordPress page — pages, posts, archives and the
+ * paginated blog listings all come out of src/data/pages.json.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { pages, type PageRecord } from '../lib/pages';
+
+export function getStaticPaths() {
+  // /404/ has its own route so Astro emits dist/404.html.
+  return pages.filter((page) => page.path !== '/404/').map((page) => ({
+    // Astro's rest param wants the path without the leading/trailing slash.
+    params: { slug: page.path.replace(/^\/|\/$/g, '') || undefined },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props as { page: PageRecord };
+---
+
+<BaseLayout page={page} />

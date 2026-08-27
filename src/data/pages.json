@@ -1,0 +1,4140 @@
+[
+  {
+    "slug": "404",
+    "path": "/404/",
+    "title": "Page not found – Plumber Franklin TN",
+    "description": null,
+    "robots": "max-image-preview:large",
+    "bodyClass": "error404 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-default elementor-kit-273 elementor-page-192",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-a70cf0de",
+    "footer": "footer-148-d645a1e3",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-404",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-5cfeb46e"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-835407d0"
+      },
+      {
+        "type": "file",
+        "name": "wp-block-library"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-6b6cca7f"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-4841a224"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "widget-search-form"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-192"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-1dc81e03"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-da34d470"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  },
+  {
+    "slug": "about-us",
+    "path": "/about-us/",
+    "title": "About Us – Plumber Franklin TN",
+    "description": null,
+    "robots": "max-image-preview:large",
+    "bodyClass": "wp-singular page-template-default page page-id-11 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-default elementor-kit-273 elementor-page elementor-page-11 elementor-page-151",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-1f024f5b",
+    "footer": "footer-148-9efaa2fb",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-about-us",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-5cfeb46e"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-835407d0"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-6b6cca7f"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "inline-elementor-frontend-inline-9acd93f2"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-4841a224"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "widget-spacer"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "swiper"
+      },
+      {
+        "type": "file",
+        "name": "e-swiper"
+      },
+      {
+        "type": "file",
+        "name": "widget-testimonial-carousel"
+      },
+      {
+        "type": "file",
+        "name": "widget-reviews"
+      },
+      {
+        "type": "file",
+        "name": "widget-star-rating"
+      },
+      {
+        "type": "file",
+        "name": "widget-carousel-module-base"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-11"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-151"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-1dc81e03"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-da34d470"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  },
+  {
+    "slug": "author__relplumbin",
+    "path": "/author/relplumbin/",
+    "title": "relplumbin – Plumber Franklin TN",
+    "description": null,
+    "robots": "max-image-preview:large",
+    "bodyClass": "archive author author-relplumbin author-2 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-page-179 elementor-default elementor-template-full-width elementor-kit-273",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-a70cf0de",
+    "footer": "footer-148-d645a1e3",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-author__relplumbin",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-5cfeb46e"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-835407d0"
+      },
+      {
+        "type": "file",
+        "name": "wp-block-library"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-6b6cca7f"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "inline-elementor-frontend-inline-7f3fa16d"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-4841a224"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "widget-spacer"
+      },
+      {
+        "type": "file",
+        "name": "widget-search-form"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "widget-posts"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-179"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-1dc81e03"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-da34d470"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  },
+  {
+    "slug": "contact-us",
+    "path": "/contact-us/",
+    "title": "Contact Us – Plumber Franklin TN",
+    "description": null,
+    "robots": "max-image-preview:large",
+    "bodyClass": "wp-singular page-template-default page page-id-31 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-default elementor-kit-273 elementor-page elementor-page-31",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-6efbfb00",
+    "footer": "footer-148-9efaa2fb",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-contact-us",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-5cfeb46e"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-835407d0"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-6b6cca7f"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-4841a224"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "widget-google_maps"
+      },
+      {
+        "type": "file",
+        "name": "widget-spacer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-31"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-1dc81e03"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-da34d470"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  },
+  {
+    "slug": "drains",
+    "path": "/drains/",
+    "title": "Drains – Plumber Franklin TN",
+    "description": null,
+    "robots": "max-image-preview:large",
+    "bodyClass": "wp-singular page-template-default page page-id-21 page-parent wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-default elementor-kit-273 elementor-page elementor-page-21 elementor-page-159",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-3158e2e6",
+    "footer": "footer-148-5d6bea06",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-drains",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-5cfeb46e"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-835407d0"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-6b6cca7f"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-4841a224"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "widget-spacer"
+      },
+      {
+        "type": "file",
+        "name": "e-shapes"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "widget-posts"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-21"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-159"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-1dc81e03"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-da34d470"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  },
+  {
+    "slug": "drains__camera-inspection",
+    "path": "/drains/camera-inspection/",
+    "title": "Camera Inspection – Plumber Franklin TN",
+    "description": null,
+    "robots": "max-image-preview:large",
+    "bodyClass": "wp-singular page-template-default page page-id-23 page-child parent-pageid-21 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-default elementor-kit-273 elementor-page elementor-page-23 elementor-page-159",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-7fa1da53",
+    "footer": "footer-148-5d6bea06",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-drains__camera-inspection",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-5cfeb46e"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-835407d0"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-6b6cca7f"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-4841a224"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "widget-spacer"
+      },
+      {
+        "type": "file",
+        "name": "e-shapes"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "widget-posts"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-23"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-159"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-1dc81e03"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-da34d470"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  },
+  {
+    "slug": "drains__drain-cleaning",
+    "path": "/drains/drain-cleaning/",
+    "title": "Drain Cleaning – Plumber Franklin TN",
+    "description": null,
+    "robots": "max-image-preview:large",
+    "bodyClass": "wp-singular page-template-default page page-id-22 page-child parent-pageid-21 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-default elementor-kit-273 elementor-page elementor-page-22 elementor-page-159",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-98e5e68e",
+    "footer": "footer-148-5d6bea06",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-drains__drain-cleaning",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-5cfeb46e"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-835407d0"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-6b6cca7f"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-4841a224"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "widget-spacer"
+      },
+      {
+        "type": "file",
+        "name": "e-shapes"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "widget-posts"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-22"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-159"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-1dc81e03"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-da34d470"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  },
+  {
+    "slug": "index",
+    "path": "/",
+    "title": "Plumber Franklin TN",
+    "description": null,
+    "robots": "max-image-preview:large",
+    "bodyClass": "home wp-singular page-template page-template-elementor_header_footer page page-id-10 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-default elementor-template-full-width elementor-kit-273 elementor-page elementor-page-10",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-432ba11f",
+    "footer": "footer-148-9efaa2fb",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-index",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-5cfeb46e"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-835407d0"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-6b6cca7f"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-4841a224"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "widget-spacer"
+      },
+      {
+        "type": "file",
+        "name": "e-shapes"
+      },
+      {
+        "type": "file",
+        "name": "e-animation-grow"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-box"
+      },
+      {
+        "type": "file",
+        "name": "swiper"
+      },
+      {
+        "type": "file",
+        "name": "e-swiper"
+      },
+      {
+        "type": "file",
+        "name": "widget-testimonial-carousel"
+      },
+      {
+        "type": "file",
+        "name": "widget-reviews"
+      },
+      {
+        "type": "file",
+        "name": "widget-star-rating"
+      },
+      {
+        "type": "file",
+        "name": "widget-carousel-module-base"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-10"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-1dc81e03"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-da34d470"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  },
+  {
+    "slug": "our-team",
+    "path": "/our-team/",
+    "title": "Our Team – Plumber Franklin TN",
+    "description": null,
+    "robots": "max-image-preview:large",
+    "bodyClass": "wp-singular page-template-default page page-id-145 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-default elementor-kit-273 elementor-page elementor-page-145 elementor-page-151",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-e723ba58",
+    "footer": "footer-148-9efaa2fb",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-our-team",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-5cfeb46e"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-835407d0"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-6b6cca7f"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "inline-elementor-frontend-inline-9acd93f2"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-4841a224"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "widget-spacer"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-info-box"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-145"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-151"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-1dc81e03"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-da34d470"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  },
+  {
+    "slug": "plumbing",
+    "path": "/plumbing/",
+    "title": "Plumbing Repair & Services – Plumber Franklin TN",
+    "description": null,
+    "robots": "max-image-preview:large",
+    "bodyClass": "wp-singular page-template-default page page-id-12 page-parent wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-default elementor-kit-273 elementor-page elementor-page-12 elementor-page-159",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-b6b2e3a7",
+    "footer": "footer-148-5d6bea06",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-plumbing",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-5cfeb46e"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-835407d0"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-6b6cca7f"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-4841a224"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "widget-spacer"
+      },
+      {
+        "type": "file",
+        "name": "e-shapes"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "widget-posts"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-12"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-159"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-1dc81e03"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-da34d470"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  },
+  {
+    "slug": "plumbing__emergency-plumbing",
+    "path": "/plumbing/emergency-plumbing/",
+    "title": "Emergency Plumbing – Plumber Franklin TN",
+    "description": null,
+    "robots": "max-image-preview:large",
+    "bodyClass": "wp-singular page-template-default page page-id-13 page-child parent-pageid-12 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-default elementor-kit-273 elementor-page elementor-page-13 elementor-page-159",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-6508e1dd",
+    "footer": "footer-148-5d6bea06",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-plumbing__emergency-plumbing",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-5cfeb46e"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-835407d0"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-6b6cca7f"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-4841a224"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "widget-spacer"
+      },
+      {
+        "type": "file",
+        "name": "e-shapes"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "widget-posts"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-13"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-159"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-1dc81e03"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-da34d470"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  },
+  {
+    "slug": "plumbing__leak-detection",
+    "path": "/plumbing/leak-detection/",
+    "title": "Leak Detection – Plumber Franklin TN",
+    "description": null,
+    "robots": "max-image-preview:large",
+    "bodyClass": "wp-singular page-template-default page page-id-14 page-child parent-pageid-12 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-default elementor-kit-273 elementor-page elementor-page-14 elementor-page-159",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-a39a25b9",
+    "footer": "footer-148-5d6bea06",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-plumbing__leak-detection",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-5cfeb46e"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-835407d0"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-6b6cca7f"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-4841a224"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "widget-spacer"
+      },
+      {
+        "type": "file",
+        "name": "e-shapes"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "widget-posts"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-14"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-159"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-1dc81e03"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-da34d470"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  },
+  {
+    "slug": "plumbing__leak-repairs",
+    "path": "/plumbing/leak-repairs/",
+    "title": "Leak Repairs – Plumber Franklin TN",
+    "description": null,
+    "robots": "max-image-preview:large",
+    "bodyClass": "wp-singular page-template-default page page-id-15 page-child parent-pageid-12 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-default elementor-kit-273 elementor-page elementor-page-15 elementor-page-159",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-21c8854b",
+    "footer": "footer-148-5d6bea06",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-plumbing__leak-repairs",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-5cfeb46e"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-835407d0"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-6b6cca7f"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-4841a224"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "widget-spacer"
+      },
+      {
+        "type": "file",
+        "name": "e-shapes"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "widget-posts"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-15"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-159"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-1dc81e03"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-da34d470"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  },
+  {
+    "slug": "plumbing__pipe-repairs",
+    "path": "/plumbing/pipe-repairs/",
+    "title": "Pipe Repairs – Plumber Franklin TN",
+    "description": null,
+    "robots": "max-image-preview:large",
+    "bodyClass": "wp-singular page-template-default page page-id-16 page-child parent-pageid-12 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-default elementor-kit-273 elementor-page elementor-page-16 elementor-page-159",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-103892b5",
+    "footer": "footer-148-5d6bea06",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-plumbing__pipe-repairs",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-5cfeb46e"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-835407d0"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-6b6cca7f"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-4841a224"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "widget-spacer"
+      },
+      {
+        "type": "file",
+        "name": "e-shapes"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "widget-posts"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-16"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-159"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-1dc81e03"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-da34d470"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  },
+  {
+    "slug": "plumbing__sewer-repair",
+    "path": "/plumbing/sewer-repair/",
+    "title": "Sewer Repair – Plumber Franklin TN",
+    "description": null,
+    "robots": "max-image-preview:large",
+    "bodyClass": "wp-singular page-template-default page page-id-19 page-child parent-pageid-12 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-default elementor-kit-273 elementor-page elementor-page-19 elementor-page-159",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-51038180",
+    "footer": "footer-148-5d6bea06",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-plumbing__sewer-repair",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-5cfeb46e"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-835407d0"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-6b6cca7f"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-4841a224"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "widget-spacer"
+      },
+      {
+        "type": "file",
+        "name": "e-shapes"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "widget-posts"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-19"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-159"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-1dc81e03"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-da34d470"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  },
+  {
+    "slug": "plumbing__sewer-replacement",
+    "path": "/plumbing/sewer-replacement/",
+    "title": "Sewer Replacement – Plumber Franklin TN",
+    "description": null,
+    "robots": "max-image-preview:large",
+    "bodyClass": "wp-singular page-template-default page page-id-20 page-child parent-pageid-12 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-default elementor-kit-273 elementor-page elementor-page-20 elementor-page-159",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-52ebfba0",
+    "footer": "footer-148-5d6bea06",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-plumbing__sewer-replacement",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-5cfeb46e"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-835407d0"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-6b6cca7f"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-4841a224"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "widget-spacer"
+      },
+      {
+        "type": "file",
+        "name": "e-shapes"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "widget-posts"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-20"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-159"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-1dc81e03"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-da34d470"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  },
+  {
+    "slug": "plumbing__slab-leak-detection",
+    "path": "/plumbing/slab-leak-detection/",
+    "title": "Slab Leak Detection – Plumber Franklin TN",
+    "description": null,
+    "robots": "max-image-preview:large",
+    "bodyClass": "wp-singular page-template-default page page-id-18 page-child parent-pageid-12 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-default elementor-kit-273 elementor-page elementor-page-18 elementor-page-159",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-c08859b2",
+    "footer": "footer-148-5d6bea06",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-plumbing__slab-leak-detection",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-5cfeb46e"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-835407d0"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-6b6cca7f"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-4841a224"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "widget-spacer"
+      },
+      {
+        "type": "file",
+        "name": "e-shapes"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "widget-posts"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-18"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-159"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-1dc81e03"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-da34d470"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  },
+  {
+    "slug": "plumbing__toilets-faucets-sinks",
+    "path": "/plumbing/toilets-faucets-sinks/",
+    "title": "Toilets, Faucets & Sinks – Plumber Franklin TN",
+    "description": null,
+    "robots": "max-image-preview:large",
+    "bodyClass": "wp-singular page-template-default page page-id-17 page-child parent-pageid-12 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-default elementor-kit-273 elementor-page elementor-page-17 elementor-page-159",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-960ab199",
+    "footer": "footer-148-5d6bea06",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-plumbing__toilets-faucets-sinks",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-5cfeb46e"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-835407d0"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-6b6cca7f"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-4841a224"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "widget-spacer"
+      },
+      {
+        "type": "file",
+        "name": "e-shapes"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "widget-posts"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-17"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-159"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-1dc81e03"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-da34d470"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  },
+  {
+    "slug": "water-heaters",
+    "path": "/water-heaters/",
+    "title": "Water Heaters – Plumber Franklin TN",
+    "description": null,
+    "robots": "max-image-preview:large",
+    "bodyClass": "wp-singular page-template-default page page-id-26 page-parent wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-default elementor-kit-273 elementor-page elementor-page-26 elementor-page-159",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-904de18b",
+    "footer": "footer-148-5d6bea06",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-water-heaters",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-5cfeb46e"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-835407d0"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-6b6cca7f"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-4841a224"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "widget-spacer"
+      },
+      {
+        "type": "file",
+        "name": "e-shapes"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "widget-posts"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-26"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-159"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-1dc81e03"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-da34d470"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  },
+  {
+    "slug": "water-heaters__conventional-water-heaters",
+    "path": "/water-heaters/conventional-water-heaters/",
+    "title": "Conventional Water Heaters – Plumber Franklin TN",
+    "description": null,
+    "robots": "max-image-preview:large",
+    "bodyClass": "wp-singular page-template-default page page-id-27 page-child parent-pageid-26 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-default elementor-kit-273 elementor-page elementor-page-27 elementor-page-159",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-e3d0f03f",
+    "footer": "footer-148-9efaa2fb",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-water-heaters__conventional-water-heaters",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-5cfeb46e"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-835407d0"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-6b6cca7f"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-4841a224"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "widget-spacer"
+      },
+      {
+        "type": "file",
+        "name": "e-shapes"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "swiper"
+      },
+      {
+        "type": "file",
+        "name": "e-swiper"
+      },
+      {
+        "type": "file",
+        "name": "widget-gallery"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gallery"
+      },
+      {
+        "type": "file",
+        "name": "e-transitions"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-27"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-159"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-1dc81e03"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-da34d470"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  },
+  {
+    "slug": "water-heaters__tankless-water-heaters",
+    "path": "/water-heaters/tankless-water-heaters/",
+    "title": "Tankless Water Heaters – Plumber Franklin TN",
+    "description": null,
+    "robots": "max-image-preview:large",
+    "bodyClass": "wp-singular page-template-default page page-id-28 page-child parent-pageid-26 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-default elementor-kit-273 elementor-page elementor-page-28 elementor-page-159",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-94e92cb5",
+    "footer": "footer-148-9efaa2fb",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-water-heaters__tankless-water-heaters",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-5cfeb46e"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-835407d0"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-6b6cca7f"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-4841a224"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "widget-spacer"
+      },
+      {
+        "type": "file",
+        "name": "e-shapes"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "swiper"
+      },
+      {
+        "type": "file",
+        "name": "e-swiper"
+      },
+      {
+        "type": "file",
+        "name": "widget-gallery"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gallery"
+      },
+      {
+        "type": "file",
+        "name": "e-transitions"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-28"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-159"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-1dc81e03"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-da34d470"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  }
+]

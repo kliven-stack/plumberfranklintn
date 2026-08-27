@@ -1,0 +1,121 @@
+---
+/**
+ * Page shell for the cloned WordPress pages.
+ *
+ * The <head> reproduces the original's stylesheet cascade exactly: every handle the
+ * WordPress page linked, in the same order, served from public/wp/css/. Elementor's
+ * compiled per-post CSS is what makes the clone pixel-accurate, so it ships verbatim
+ * rather than being re-derived (playbook §2).
+ */
+import type { PageRecord } from '../lib/pages';
+import { fragment } from '../lib/pages';
+import { WEBFONTS, TURNSTILE_SITE_KEY } from '../config';
+import { FIXES_ON, FIX_CSS, fixPageMeta, fixSeoHead } from '../lib/fixes';
+import '../styles/global.css';
+
+interface Props {
+  page: PageRecord;
+}
+
+const { page } = Astro.props as Props;
+const site = Astro.site ?? new URL('https://plumberfranklintn.com');
+const canonical = new URL(page.path, site).href;
+
+// Stored with the origin templated out, so a preview deployment describes itself
+// rather than production. Empty on every page of this site — WordPress runs no SEO
+// plugin here — but the call site matches the sibling clones.
+const seoHead = fixSeoHead(
+  page.seoHead
+    .split('__ORIGIN_ESC__').join(site.origin.replace(/\//g, '\\/'))
+    .split('__ORIGIN__').join(site.origin),
+);
+
+const meta = fixPageMeta(page.path);
+const description = meta.description ?? page.description;
+const robots = meta.robots ?? page.robots;
+
+/**
+ * Elementor's Google-font stylesheets, self-hosted by scripts/build-fonts.mjs.
+ * On by default, because that is what production renders.
+ */
+const webfonts = WEBFONTS !== 'off';
+const css = webfonts ? page.css : page.css.filter((c) => !c.name.startsWith('elementor-gf-local-'));
+
+/**
+ * The latin faces above the fold on every page, from Elementor's own local Google
+ * Fonts files: Ledger for headings, Lato 400 for body copy and Lato 700 for the
+ * bolder headings and buttons. Preloading them removes the swap flash the WordPress
+ * site shows.
+ *
+ * Ledger ships one weight only — Google publishes no 600 — so kit 273's
+ * `--e-global-typography-primary-font-weight: 600` is synthesised by the browser
+ * on both sides. That is production's behaviour, and it is cloned rather than
+ * corrected.
+ */
+const PRELOAD_FONTS = webfonts
+  ? [
+      '/wp/fonts/ledger-j8_q6-hk1l3if_sbnmrx.woff2',
+      '/wp/fonts/lato-s6uyw4bmutphjx4wxg.woff2',
+      '/wp/fonts/lato-s6u9w4bmutphh6uvswipgq.woff2',
+    ]
+  : [];
+---
+
+<!doctype html>
+<html lang={page.lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content={page.viewport} />
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+    {robots && <meta name="robots" content={robots} />}
+    <title set:html={page.title} />
+    {description && <meta name="description" content={description} />}
+    <link rel="canonical" href={canonical} />
+    {seoHead && <Fragment set:html={seoHead} />}
+
+    {PRELOAD_FONTS.map((href) => (
+      <link rel="preload" as="font" type="font/woff2" href={href} crossorigin />
+    ))}
+
+    {css.map((sheet) => <link rel="stylesheet" href={`/wp/css/${sheet.name}.css`} />)}
+
+    {page.favicons.map((icon) => (
+      <link rel={icon.rel} href={icon.href} {...(icon.sizes ? { sizes: icon.sizes } : {})} />
+    ))}
+    {page.tile && <meta name="msapplication-TileImage" content={page.tile} />}
+
+    {/* Read by src/scripts/form.js, which mounts the widget into the placeholder
+        `rewireForm` left where Gravity Forms' invisible reCAPTCHA used to be.
+        Public by design; it is the only key that may reach the browser. */}
+    {TURNSTILE_SITE_KEY && <meta name="turnstile-sitekey" content={TURNSTILE_SITE_KEY} />}
+
+    {FIXES_ON && FIX_CSS && <style set:html={FIX_CSS} />}
+
+    <slot name="head" />
+  </head>
+
+  <body class={page.bodyClass}>
+    {page.hasSkipLink && (
+      <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+    )}
+
+    {page.header && <Fragment set:html={fragment(page.header)} />}
+
+    <slot>
+      <Fragment set:html={fragment(page.content)} />
+    </slot>
+
+    {page.footer && <Fragment set:html={fragment(page.footer)} />}
+
+    {/* Elementor popup 189, "Book Appointment", which every page carries. It is
+        printed here exactly where WordPress prints it — after the footer, still
+        carrying `data-elementor-type="popup"`. `e-popup.css` hides that attribute
+        outright, and src/scripts/elementor.js is what lifts the node into the
+        dialog widget and sets the inline `display: block` that overrides the rule
+        (playbook §3.12). */}
+    {page.popups.map((name) => <Fragment set:html={fragment(name)} />)}
+
+    <script src="../scripts/elementor.js"></script>
+    <script src="../scripts/form.js"></script>
+  </body>
+</html>

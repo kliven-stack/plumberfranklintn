@@ -1,0 +1,56 @@
+/* Tailwind v4 — theme + utilities only, and only for the components we author.
+
+   Preflight is deliberately NOT imported: the cloned pages ship Elementor's own
+   compiled CSS from public/wp/css/, and a reset layered on top would change the
+   original rendering.
+
+   `source(none)` matters just as much. Tailwind's automatic content detection
+   scans every file in the project, including the ported WordPress fragments —
+   and WordPress class names collide with Tailwind utility names (`size-full` on
+   every full-size image figure, plus `hidden`, `container`, `block`, `table`,
+   `static`). Only our own components are scanned. */
+@layer theme, base, components, utilities;
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities) source(none);
+@source '../components';
+@source '../pages';
+
+@theme {
+  /* Elementor kit 273's global colours, verbatim from
+     public/wp/css/elementor-post-273.css. The kit is Elementor's untouched default
+     palette — the site's real brand colours live on the individual elements
+     instead, which is why `primary` here is a pale blue nothing on the page uses. */
+  --color-kit-primary: #6ec1e4;
+  --color-kit-secondary: #54595f;
+  --color-kit-text: #7a7a7a;
+  --color-kit-accent: #61ce70;
+  --color-kit-indigo: #4054b2;
+  --color-kit-green: #23a455;
+  --color-kit-black: #000000;
+  --color-kit-white: #ffffff;
+
+  /* What the design actually uses, counted off the compiled header/footer/home
+     sheets — the kit above is Elementor's stock palette and none of it appears on
+     the page. Two blues do almost all the work, and they are almost but not quite
+     the same colour (see the README's bug register). */
+  --color-brand-blue: #5ab7e7;
+  --color-brand-blue-alt: #62bae7;
+  --color-brand-cyan: #00b8e9;
+  --color-brand-navy: #00355e;
+  --color-brand-ink: #3f3f3f;
+  --color-brand-gold: #f3bc39;
+  --color-brand-rule: #cecece;
+
+  /* Elementor kit typography globals. */
+  --font-primary: 'Ledger', serif;
+  --font-secondary: 'Ledger', serif;
+  --font-text: 'Lato', sans-serif;
+  --font-accent: 'Lato', sans-serif;
+
+  /* Elementor breakpoints — base is mobile, md = tablet, lg = desktop */
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1025px;
+
+  /* The kit's boxed-section width */
+  --container-elementor: 1140px;
+}
