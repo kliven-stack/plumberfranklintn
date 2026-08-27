@@ -38,12 +38,13 @@ export default defineConfig({
   integrations: [
     sitemap({
       /**
-       * WordPress advertised twenty of these URLs across two sitemaps — nineteen
-       * pages plus the author archive. The author archive is an empty listing that
-       * nothing links to, and the theme's 404 template is a route here rather than
-       * a page, so neither belongs in an index.
+       * WordPress advertised twenty URLs across two sitemaps: its nineteen pages
+       * plus the author archive. Three of this build's routes are dropped here -
+       * the author archive is an empty listing nothing links to, and the 404 and
+       * search templates are routes rather than pages. That leaves the nineteen
+       * WordPress listed, and only those.
        */
-      filter: (page) => !/\/(404|author)\//.test(page),
+      filter: (page) => !/\/(404|author|search)\//.test(page),
     }),
   ],
 
