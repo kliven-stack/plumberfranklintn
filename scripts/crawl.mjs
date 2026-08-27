@@ -136,6 +136,18 @@ const run = async () => {
     }
   }
 
+  // The search results template. WordPress answers `/?s=<term>` with archive
+  // template 179 — and always with "It seems we can't find what you're looking
+  // for.", because the archive queries posts and this site has none (see the
+  // README's bug register). Captured with a fixed probe term so the fragment is
+  // stable; src/pages/search.astro puts the real term back from the query string.
+  const search = await get(`${ORIGIN}/?s=CLONE_SEARCH_TERM`);
+  if (search.status === 200) {
+    await writeFile(path.join(OUT, 'html', 'search.html'), search.body);
+    manifest.push({ url: `${ORIGIN}/search/`, status: 200, finalUrl: `${ORIGIN}/search/`, slug: 'search', fromSitemap: false });
+    console.log('search template captured');
+  }
+
   // The theme's 404 template, so unknown URLs land on the site's own page rather
   // than the host's default. Fetched from a URL WordPress is guaranteed to miss.
   const notFound = await get(`${ORIGIN}/this-page-does-not-exist-clone-probe/`);

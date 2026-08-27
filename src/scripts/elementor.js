@@ -203,9 +203,11 @@ function initPPMenu(widget) {
  *   collapsibleBehavior: 'link'  in the vertical panel the link navigates and the
  *                                arrow is what expands the sub-menu
  *
- * That 500ms hide timeout is exactly why the WordPress site never shows the bug
- * playbook §3.11 warns about, and it is reproduced rather than approximated —
- * `npm run functional` walks the real pointer path (parent → gap → sub-item).
+ * Note what is *not* in that list: hover. SmartMenus only opens on hover in its
+ * horizontal mode, and this is the vertical off-canvas panel — production was
+ * measured leaving the sub-menu shut with the pointer parked on a parent item.
+ * Playbook §3.11's hover-gap bug therefore cannot occur here, and `npm run
+ * functional` asserts that hover does nothing so it cannot creep back in.
  *
  * The annotations are part of the contract because the compiled CSS and assistive
  * tech both read them: `has-submenu` on the parent anchor, the `sm-<id>-<n>` id
@@ -213,7 +215,7 @@ function initPPMenu(widget) {
  * `aria-controls`, `aria-expanded`, `aria-hidden`, `aria-labelledby`, and on the
  * open sub-menu the inline `width: auto; display: block;`.
  */
-const SM_SHOW_TIMEOUT = 250;
+/** SmartMenus' hide delay, still used by the focus-out path. */
 const SM_HIDE_TIMEOUT = 500;
 const SM_OPEN_STYLE = 'width: auto; display: block;';
 
@@ -257,7 +259,7 @@ function annotateSmartMenu(root, subIndicatorHtml) {
     sub.setAttribute('aria-expanded', 'false');
     sub.setAttribute('aria-label', anchor.firstChild?.textContent?.trim() || '');
 
-    state.set(li, { anchor, sub, arrow, showTimer: null, hideTimer: null, open: false });
+    state.set(li, { anchor, sub, arrow, hideTimer: null, open: false });
   }
   if (!state.size) return;
 
@@ -278,25 +280,24 @@ function annotateSmartMenu(root, subIndicatorHtml) {
   };
 
   const clearTimers = (s) => {
-    clearTimeout(s.showTimer); s.showTimer = null;
     clearTimeout(s.hideTimer); s.hideTimer = null;
   };
 
   for (const [li, s] of state) {
-    // Hover, with SmartMenus' own delays. The hide timer is what keeps the
-    // sub-menu alive while the pointer crosses into it (playbook §3.11); moving
-    // back onto the item — or onto the sub-menu, which is inside the same <li> —
-    // cancels it.
-    li.addEventListener('mouseenter', () => {
-      clearTimers(s);
-      s.showTimer = setTimeout(() => { closeAll(li); setOpen(li, true); }, SM_SHOW_TIMEOUT);
-    });
-    li.addEventListener('mouseleave', () => {
-      clearTimers(s);
-      s.hideTimer = setTimeout(() => setOpen(li, false), SM_HIDE_TIMEOUT);
-    });
-
     // `collapsibleBehavior: 'link'` — the anchor navigates, the arrow expands.
+    //
+    // There is deliberately no hover handler, and that is a correction rather than
+    // an omission: an earlier draft opened sub-menus on hover, and measuring
+    // production showed it does nothing at all when the pointer rests on a parent
+    // item for over a second. SmartMenus only opens on hover in its horizontal
+    // mode, and this menu is the vertical off-canvas panel, which runs collapsed.
+    //
+    // That also takes playbook §3.11 off the table here: there is no gap for a
+    // pointer to cross, because nothing opens on hover to begin with. The
+    // `showTimeout` / `hideTimeout` values the instance carries (250/500) are real
+    // but unreachable on this site; `npm run functional` asserts hover leaves the
+    // sub-menu shut, so a future change back to a horizontal bar fails loudly
+    // rather than quietly reintroducing the bug.
     s.arrow.addEventListener('click', (event) => {
       event.preventDefault();
       event.stopPropagation();
@@ -452,17 +453,6 @@ function initAnimatedHeadline(widget) {
   const delay = Number(s.rotate_iteration_delay) || 2500;
   if (s.loop === 'yes' && !reduceMotion) setInterval(advance, delay);
 
-  /** Lets scripts/compare.mjs pin the headline to a deterministic first phrase. */
-  widget.eHeadline = {
-    reset() {
-      for (const el of items) {
-        el.classList.remove('elementor-headline-text-active', 'elementor-headline-text-inactive');
-      }
-      index = 0;
-      items[0].classList.add('elementor-headline-text-active');
-      sizeRotateWrapper(wrapper, items[0]);
-    },
-  };
 }
 
 /**
@@ -470,8 +460,26 @@ function initAnimatedHeadline(widget) {
  * wrapper would collapse to the widest one's box only by accident. Elementor
  * measures the active phrase and writes the width; the stylesheet transitions it.
  */
+/**
+ * Layout width, in the fractional pixels the stylesheet resolved it to.
+ *
+ * Never `getBoundingClientRect().width` here: the flip animation puts a `rotateX`
+ * on the phrase, and a bounding box includes the transform — so a measurement taken
+ * mid-flight comes back narrower than the text really is and the headline wraps
+ * onto an extra line. jQuery's `.width()`, which Elementor uses, reads the same
+ * transform-independent value this does.
+ */
+const layoutWidth = (el) => parseFloat(getComputedStyle(el).width) || 0;
+
 function sizeRotateWrapper(wrapper, active) {
-  wrapper.style.width = `${Math.round(active.getBoundingClientRect().width * 1000) / 1000}px`;
+  // Clear first, and force a layout before reading. The wrapper is still carrying
+  // the *previous* phrase's width, and the active phrase is `position: relative`
+  // inside it - so measuring without clearing measures the old box, and at narrow
+  // viewports that is the difference between the headline wrapping onto three
+  // lines and four.
+  wrapper.style.removeProperty('width');
+  void wrapper.offsetWidth;
+  wrapper.style.width = `${Math.round(layoutWidth(active) * 1000) / 1000}px`;
 }
 
 /* ------------------------------------------------------------------ *
@@ -778,7 +786,12 @@ function initSwiper(container, cfg) {
 
     const width = container.clientWidth;
     if (!width) {
-      // Hidden container: Swiper indexes and duplicates but sizes nothing.
+      // A container that is `display: none` measures 0 wide, and Swiper then skips
+      // sizing entirely: it duplicates and indexes the slides, writes `cursor:
+      // grab; transition-duration: 0ms;` on the wrapper — and no transform, no
+      // slide width, no margin, no `aria-label`. Measured off production's own
+      // reviews widget, which sits in a section hidden at every breakpoint.
+      wrapper.style.cssText = 'cursor: grab; transition-duration: 0ms;';
       markClasses();
       return;
     }
@@ -968,21 +981,32 @@ function createDialog({ id, modifier, animation = '' }) {
  * Popup 189, "Book Appointment", is printed on every page and opened by the two
  * "Book Appointment" buttons on the service pages and the home page.
  *
- * The trap here is playbook §3.12's: `e-popup.css` carries
- * `[data-elementor-type=popup]:not(.elementor-edit-area){display:none}`, so the
- * template is invisible until Elementor mounts it — and Elementor does *not* strip
- * the attribute, it writes an inline `display: block` that outranks the rule. Miss
- * that and the popup opens as an empty grey overlay.
+ * Two details are load-bearing, and both were measured rather than assumed:
+ *
+ *   * Elementor **detaches** the template from the document at init and only puts
+ *     it back when the popup opens. Production's DOM genuinely has no
+ *     `[data-elementor-type="popup"]` node until you click. Leaving it in place is
+ *     what the first computed-style diff caught: five clone-only elements the live
+ *     page did not have.
+ *   * `e-popup.css` carries
+ *     `[data-elementor-type=popup]:not(.elementor-edit-area){display:none}`, and
+ *     Elementor does *not* strip the attribute when it mounts — it writes an inline
+ *     `display: block` that outranks the rule (playbook §3.12). Miss that and the
+ *     popup opens as an empty grey overlay.
  * ------------------------------------------------------------------ */
 function initPopups() {
-  const templates = [...document.querySelectorAll('body > [data-elementor-type="popup"]')];
-  if (!templates.length) return;
+  const templates = new Map();
+  for (const el of document.querySelectorAll('body > [data-elementor-type="popup"]')) {
+    templates.set(el.getAttribute('data-elementor-id') || 'x', el);
+    el.remove();
+  }
+  if (!templates.size) return;
 
   const dialogs = new Map();
   const open = (id) => {
     let entry = dialogs.get(id);
     if (!entry) {
-      const template = templates.find((el) => el.getAttribute('data-elementor-id') === id) ?? templates[0];
+      const template = templates.get(id) ?? [...templates.values()][0];
       if (!template) return;
       const dialog = createDialog({
         id: `elementor-popup-modal-${id}`,

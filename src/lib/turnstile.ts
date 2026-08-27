@@ -1,7 +1,5 @@
 import { env } from './env';
 
-const VERIFY_URL = 'https://challenges.cloudflare.com/turnstile/v0/siteverify';
-
 export interface TurnstileResult {
   ok: boolean;
   /** True when verification was skipped because no keys are configured yet. */
@@ -36,7 +34,7 @@ export async function verifyTurnstile(token: string | undefined, ip?: string): P
   if (ip) body.set('remoteip', ip);
 
   try {
-    const res = await fetch(VERIFY_URL, {
+    const res = await fetch(env.turnstileVerifyUrl, {
       method: 'POST',
       headers: { 'content-type': 'application/x-www-form-urlencoded' },
       body,

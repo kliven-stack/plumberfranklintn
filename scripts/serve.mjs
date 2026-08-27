@@ -7,7 +7,7 @@ import path from 'node:path';
 // The Vercel adapter writes the static site here, not to dist/ (playbook §3.4).
 const ROOT = new URL('../.vercel/output/static/', import.meta.url).pathname;
 // Honour vercel.json's redirects so local runs behave like production.
-const { redirects = [] } = JSON.parse(await readFile(new URL('../vercel.json', import.meta.url), 'utf8'));
+const { redirects = [], rewrites = [] } = JSON.parse(await readFile(new URL('../vercel.json', import.meta.url), 'utf8'));
 const PORT = Number(process.env.PORT || 4321);
 const TYPES = {
   '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript',
@@ -57,7 +57,13 @@ createServer(async (req, res) => {
     return;
   }
 
-  let file = path.join(ROOT, decodeURIComponent(url.pathname));
+  // Rewrites, matched the same way — same source patterns, same `has` conditions,
+  // but serving the destination rather than redirecting to it. `/?s=term` is the
+  // one this site needs (see vercel.json).
+  const rewrite = rewrites.find((r) => matchesSource(r.source) && (r.has ?? []).every((h) => h.type === 'query' && url.searchParams.has(h.key)));
+  const servePath = rewrite ? rewrite.destination : url.pathname;
+
+  let file = path.join(ROOT, decodeURIComponent(servePath));
   try {
     if ((await stat(file)).isDirectory()) file = path.join(file, 'index.html');
   } catch {

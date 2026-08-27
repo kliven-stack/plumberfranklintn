@@ -25,6 +25,16 @@ export const env = {
 
   get turnstileSecret() { return read('TURNSTILE_SECRET_KEY'); },
   get turnstileSiteKey() { return read('PUBLIC_TURNSTILE_SITE_KEY'); },
+  /**
+   * Where the token is verified. Cloudflare's own endpoint everywhere that
+   * matters; overridable so `npm run form` can drive the whole pipeline against a
+   * local stub instead of hammering - and being rate-limited by - the real
+   * service, which made those checks pass and fail for reasons unrelated to the
+   * code. Never set in Vercel.
+   */
+  get turnstileVerifyUrl() {
+    return read('TURNSTILE_VERIFY_URL') || 'https://challenges.cloudflare.com/turnstile/v0/siteverify';
+  },
 
   /**
    * Salt for the one-way hash of the submitter's IP. The raw address is never

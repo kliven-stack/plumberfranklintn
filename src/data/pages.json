@@ -3524,6 +3524,204 @@
     "seoHead": ""
   },
   {
+    "slug": "search",
+    "path": "/search/",
+    "title": "Search Results for “CLONE_SEARCH_TERM” – Plumber Franklin TN",
+    "description": null,
+    "robots": "noindex, follow, max-image-preview:large",
+    "bodyClass": "search search-no-results wp-custom-logo wp-embed-responsive wp-theme-hello-elementor wp-child-theme-hello-theme-child-master hello-elementor-default elementor-page-179 elementor-default elementor-template-full-width elementor-kit-273",
+    "viewport": "width=device-width, initial-scale=1",
+    "lang": "en-US",
+    "hasSkipLink": true,
+    "header": "header-147-1e06c4dc",
+    "footer": "footer-148-24466677",
+    "popups": [
+      "popup-189-24649f2f"
+    ],
+    "content": "page-search",
+    "css": [
+      {
+        "type": "file",
+        "name": "inline-wp-img-auto-sizes-contain-inline-e30bfec6"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-emoji-styles-inline-32d8f52d"
+      },
+      {
+        "type": "file",
+        "name": "wp-block-library"
+      },
+      {
+        "type": "file",
+        "name": "inline-global-styles-inline-cb0158d3"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-theme-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-child-style"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor"
+      },
+      {
+        "type": "file",
+        "name": "hello-elementor-header-footer"
+      },
+      {
+        "type": "file",
+        "name": "elementor-frontend"
+      },
+      {
+        "type": "file",
+        "name": "inline-elementor-frontend-inline-89182ea5"
+      },
+      {
+        "type": "file",
+        "name": "widget-image"
+      },
+      {
+        "type": "file",
+        "name": "widget-animated-headline"
+      },
+      {
+        "type": "file",
+        "name": "widget-icon-list"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-advanced-menu"
+      },
+      {
+        "type": "file",
+        "name": "inline-widget-pp-advanced-menu-inline-214173cf"
+      },
+      {
+        "type": "file",
+        "name": "widget-heading"
+      },
+      {
+        "type": "file",
+        "name": "widget-spacer"
+      },
+      {
+        "type": "file",
+        "name": "widget-search-form"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-shared-0"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-solid"
+      },
+      {
+        "type": "file",
+        "name": "widget-posts"
+      },
+      {
+        "type": "file",
+        "name": "widget-pp-gravity-forms"
+      },
+      {
+        "type": "file",
+        "name": "e-popup"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-273"
+      },
+      {
+        "type": "file",
+        "name": "pp-extensions"
+      },
+      {
+        "type": "file",
+        "name": "pp-tooltip"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-147"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-148"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-179"
+      },
+      {
+        "type": "file",
+        "name": "elementor-post-189"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-ledger"
+      },
+      {
+        "type": "file",
+        "name": "elementor-gf-local-lato"
+      },
+      {
+        "type": "file",
+        "name": "elementor-icons-fa-brands"
+      },
+      {
+        "type": "file",
+        "name": "inline-anon-e13b03c5"
+      },
+      {
+        "type": "file",
+        "name": "inline-wp-custom-42ef2126"
+      },
+      {
+        "type": "file",
+        "name": "gforms_reset_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_formsmain_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_ready_class_css"
+      },
+      {
+        "type": "file",
+        "name": "gforms_browsers_css"
+      }
+    ],
+    "favicons": [
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-32x32.png",
+        "sizes": "32x32"
+      },
+      {
+        "rel": "icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-180x180.png",
+        "sizes": null
+      }
+    ],
+    "tile": "/wp-content/uploads/2020/01/cropped-logo-plumbing-1-270x270.png",
+    "seoHead": ""
+  },
+  {
     "slug": "water-heaters",
     "path": "/water-heaters/",
     "title": "Water Heaters – Plumber Franklin TN",

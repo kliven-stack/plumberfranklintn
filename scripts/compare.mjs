@@ -70,7 +70,15 @@ const PROBE = () => {
       w: Math.round(r.width), h: Math.round(r.height),
       font: `${cs.fontFamily.split(',')[0].replace(/["']/g, '')} ${cs.fontSize} ${cs.fontWeight}`,
       color: cs.color,
-      bg: cs.backgroundColor,
+      // A background colour with zero alpha cannot paint, whatever its channels
+      // say, so all of them compare equal. This is not papering over a
+      // difference: LiteSpeed's minifier rewrites the theme reset's
+      // `background: transparent` to `background: #fff0`, and the search page —
+      // the one page a query string keeps out of LiteSpeed's cache — therefore
+      // serves the unminified original. Chrome then reports `rgba(0,0,0,0)` on
+      // production and `rgba(255,255,255,0)` on the clone for the same
+      // fully-transparent list item, 51 times over.
+      bg: /,\s*0\)$/.test(cs.backgroundColor) ? 'transparent' : cs.backgroundColor,
       // Background *images*, not just colours. Comparing only `backgroundColor`
       // let the whole home-page hero go missing unnoticed: it is an Elementor
       // background slideshow, built entirely in JS from a gallery in
@@ -176,38 +184,17 @@ for (const width of widths) {
     // Videos never settle and third-party embeds vary run to run; block both sides
     // identically so the geometry is comparable (playbook §7.6).
     await ctx.route('**/*.{mp4,mov,webm}', (r) => r.abort());
-    // /book-an-appointment/ paints a YouTube background video into its hero. The
-    // player keeps the load event pending long enough to blow a 90s timeout on the
-    // live side, so the page was being skipped entirely. The container it sits in
-    // is CSS-sized, so blocking the embed on both sides leaves the geometry
-    // comparable and the page measurable (playbook §7.6).
-    await ctx.route('**://*.youtube.com/**', (r) => r.abort());
-    await ctx.route('**://*.youtube-nocookie.com/**', (r) => r.abort());
-    await ctx.route('**://*.ytimg.com/**', (r) => r.abort());
-    await ctx.route('**://*.googletagmanager.com/**', (r) => r.abort());
-    await ctx.route('**://*.google-analytics.com/**', (r) => r.abort());
-    // The LeadConnector widgets render differently run to run and their host resets
-    // headless traffic at random, so both the forms and the chat bubble are blocked on
-    // both sides. The iframe boxes themselves are sized by the page's own CSS, so the
-    // geometry stays comparable — and while no Growthmap endpoint is configured both
-    // sides serve those same iframes anyway.
-    // KEEP_EMBEDS=1 lets the lead widgets load on both sides, to check the geometry
-    // they actually produce. Off by default: the host resets headless traffic at
-    // random, so a run that keeps them is only meaningful when it succeeds.
-    if (!process.env.KEEP_EMBEDS) await ctx.route('**://verified.trustymail.co/**', (r) => r.abort());
-    await ctx.route('**://*.leadconnectorhq.com/**', (r) => r.abort());
-    await ctx.route('**://links.sybrware.com/**', (r) => r.abort());
-    await ctx.route('**://*.googleapis.com/**', (r) => r.abort());
-    // Zocdoc's "Book Online" widget is the flakiest thing on the page. Its inline
-    // loader swaps the plain link for a hosted image button (238x30 instead of
-    // 177x60), and whether it wins the race varies per load — so an unblocked run
-    // reports ~550 diffs on the home page one time and 0 the next, purely from which
-    // side got the widget. Blocked on both sides, both render the same fallback link.
-    await ctx.route('**://*.zocdoc.com/**', (r) => r.abort());
-    // The ThreeBestRated award badge is deliberately NOT blocked. Both sides load
-    // it from the same external host and it is a fixed 200px SVG, so it measures
-    // identically — whereas blocking it leaves two differently-sized broken-image
-    // boxes, which is a difference the harness invented rather than found.
+    // Google's reCAPTCHA rides on production's Gravity Forms and has no
+    // counterpart here — the clone uses Turnstile, configured `interaction-only`
+    // so it paints nothing. Blocking it on the live side is what makes the two
+    // forms comparable rather than a difference the harness invented.
+    await ctx.route('**://www.google.com/recaptcha/**', (r) => r.abort());
+    await ctx.route('**://www.gstatic.com/recaptcha/**', (r) => r.abort());
+    // The one Google Maps embed, on /contact-us/. Its iframe is CSS-sized on both
+    // sides, and letting it load makes the page's height vary run to run.
+    await ctx.route('**://maps.google.com/**', (r) => r.abort());
+    await ctx.route('**://www.google.com/maps/**', (r) => r.abort());
+    await ctx.route('**://challenges.cloudflare.com/**', (r) => r.abort());
     return ctx;
   };
 
@@ -230,11 +217,24 @@ for (const width of widths) {
     }
     sinceRecycle++;
 
+    /**
+     * Where this page lives on each side.
+     *
+     * One page differs: WordPress serves its search results at `/?s=<term>`, and
+     * the clone serves the same template at `/search/`. Both sides are asked for
+     * the query form — which also exercises the vercel.json rewrite that keeps that
+     * URL alive — with the probe term scripts/crawl.mjs captured with, so the two
+     * render the same heading.
+     */
+    const urlFor = (origin) => origin + (page.path === '/search/'
+      ? '/?s=CLONE_SEARCH_TERM'
+      : page.path);
+
     const measure = async (origin) => {
       const tab = await ctx.newPage();
       await tab.bringToFront();
       try {
-        await tab.goto(origin + page.path, { waitUntil: 'load', timeout: 90000 });
+        await tab.goto(urlFor(origin), { waitUntil: 'load', timeout: 90000 });
         // Text wraps differently against fallback metrics. Production serves large
         // unsubsetted TTFs, so it swaps in noticeably later than the clone's woff2 —
         // measuring before both have settled invents differences that are not there.
@@ -265,10 +265,41 @@ for (const width of widths) {
         // Pro's testimonial carousel and reviews widget both autoplay every 5s, and
         // the Essential Addons team strip every 2s, so leaving any of them free
         // makes the sections below them unmeasurable.
+        // Two things on this site move on a timer, so both are pinned to their
+        // first state last of all — production runs real Swiper and Elementor's
+        // animated headline, the clone runs the reimplementations in
+        // src/scripts/elementor.js, and both are asked for index 0 with no
+        // transition. The reviews carousel autoplays every 5s; the rotating
+        // headline on the home page swaps phrase every 2.5s and resizes its
+        // wrapper as it does, which moves the hero copy underneath it.
         await tab.evaluate(() => {
-          for (const el of document.querySelectorAll('.elementor-main-swiper, .eael-tm-carousel, [id^="swiper-container-"]')) {
+          for (const el of document.querySelectorAll('.elementor-main-swiper')) {
             if (el.swiper) { el.swiper.autoplay?.stop(); el.swiper.slideToLoop(0, 0); }
             else if (el.eCarousel) el.eCarousel.reset();
+          }
+          for (const el of document.querySelectorAll('[data-widget_type="animated-headline.default"]')) {
+            const items = [...el.querySelectorAll('.elementor-headline-dynamic-text')];
+            if (items.length < 2) continue;
+            for (const item of items) {
+              item.classList.remove('elementor-headline-text-active', 'elementor-headline-text-inactive');
+            }
+            items[0].classList.add('elementor-headline-text-active');
+            const wrap = el.querySelector('.elementor-headline-dynamic-wrapper');
+            if (!wrap) continue;
+            // Clear before measuring: the wrapper still carries whichever phrase
+            // was showing, and the active phrase lays out inside it. And read the
+            // *layout* width, never getBoundingClientRect — the flip animation puts
+            // a `rotateX` on the phrase and a bounding box includes the transform.
+            wrap.style.removeProperty('width');
+            void wrap.offsetWidth;
+            wrap.style.width = `${Math.round(parseFloat(getComputedStyle(items[0]).width) * 1000) / 1000}px`;
+            // Then freeze it. Setting the phrase is not enough: both sides keep a
+            // 2.5s interval running, and it fires again between the pin and the
+            // probe — which is exactly how this page reported 211 diffs while every
+            // other page reported none. Swapping in a detached copy leaves each
+            // site's timer mutating a node that is no longer in the document, so
+            // what gets measured cannot move.
+            el.replaceWith(el.cloneNode(true));
           }
         });
         await tab.waitForTimeout(250);

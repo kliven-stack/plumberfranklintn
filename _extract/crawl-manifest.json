@@ -168,6 +168,13 @@
     "fromSitemap": false
   },
   {
+    "url": "https://plumberfranklintn.com/search/",
+    "status": 200,
+    "finalUrl": "https://plumberfranklintn.com/search/",
+    "slug": "search",
+    "fromSitemap": false
+  },
+  {
     "url": "https://plumberfranklintn.com/404/",
     "status": 200,
     "finalUrl": "https://plumberfranklintn.com/404/",

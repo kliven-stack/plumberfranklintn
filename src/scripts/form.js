@@ -17,6 +17,8 @@
  *                what Gravity Forms swaps in after an AJAX submission
  */
 
+import { actions, isInputError } from 'astro:actions';
+
 const TURNSTILE_SRC = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
 
 const siteKey = document.querySelector('meta[name="turnstile-sitekey"]')?.content || '';
@@ -144,16 +146,18 @@ function initForm(form) {
     if (wrapper.classList.contains('gform_submission_in_progress')) return;
 
     clearErrors(form);
-    // Keep the browser's own validation, which is what the markup asks for via
-    // `type="email"` and the required selects.
+    // Whatever the browser is willing to check is still worth checking — which on
+    // this form is only `type="email"`. Gravity Forms marks its required fields
+    // with `aria-required` alone, so an empty submit is the server's to reject,
+    // here as on the WordPress site.
     if (!form.checkValidity()) { form.reportValidity(); return; }
 
     wrapper.classList.add('gform_submission_in_progress');
     if (button) { button.disabled = true; button.setAttribute('aria-busy', 'true'); }
 
     try {
-      const data = new FormData(form);
-      data.set('pagePath', location.pathname);
+      const payload = new FormData(form);
+      payload.set('pagePath', location.pathname);
 
       if (widgetId !== null && window.turnstile) {
         // `interaction-only` still issues a token without showing anything when the
@@ -167,31 +171,24 @@ function initForm(form) {
           });
           token = window.turnstile.getResponse(widgetId);
         }
-        if (token) data.set('turnstileToken', token);
+        if (token) payload.set('turnstileToken', token);
       }
 
-      // The trailing slash is load-bearing. `trailingSlash: 'always'` makes Vercel
-      // 308 any slash-less path, and the adapter's own route for the action is
-      // `^/_actions(?:/(.*?))?/$` — so posting to `/_actions/contactSubmit` takes a
-      // redirect on every submission. Playbook §3.1 is the same failure one step
-      // further on: a dot in the action's name makes that redirect land on a 404.
-      const res = await fetch('/_actions/contactSubmit/', { method: 'POST', body: data });
-      const payload = await res.json().catch(() => ({}));
+      // Called through Astro's own client rather than a hand-rolled fetch. That
+      // is not just tidier: the success payload is devalue-encoded, not plain
+      // JSON, and the failure envelope is `{ type: 'AstroActionInputError',
+      // issues }` — decoding either by hand is how the first draft of this file
+      // reported "something went wrong" on a submission that had actually
+      // succeeded. The client also picks the right URL, including the trailing
+      // slash `trailingSlash: 'always'` requires (playbook §3.1).
+      const { data, error } = await actions.contactSubmit(payload);
 
-      // Astro actions answer `{ data }` on success and `{ error }` on failure; a
-      // Zod failure carries per-field messages in `error.fields`.
-      const error = payload?.error ?? (res.ok ? null : { message: 'Something went wrong.' });
       if (!error) {
-        showConfirmation(wrapper, payload?.data?.message ?? payload?.message ?? 'Thank you.');
+        showConfirmation(wrapper, data?.message ?? 'Thank you.');
         return;
       }
 
-      const fields = error.fields ?? error.issues?.reduce((acc, issue) => {
-        const key = issue.path?.[0];
-        if (key) (acc[key] ??= []).push(issue.message);
-        return acc;
-      }, {});
-      const shown = fields ? showFieldErrors(form, fields) : false;
+      const shown = isInputError(error) ? showFieldErrors(form, error.fields) : false;
       if (!shown) showFormError(form, error.message || 'Something went wrong. Please try again.');
       if (widgetId !== null && window.turnstile) window.turnstile.reset(widgetId);
     } catch (err) {

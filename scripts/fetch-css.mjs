@@ -29,7 +29,15 @@ for (const f of files) {
     const tag = m[0];
     const id = /id='([^']*)-css'/.exec(tag)?.[1];
     const href = /href='([^']*)'/.exec(tag)?.[1];
-    if (id && href && !map.has(id)) map.set(id, href);
+    if (!id || !href) continue;
+    // A handle can resolve to two URLs on this install: LiteSpeed Cache serves an
+    // optimised copy to cached pages and the plugin's or theme's original file to
+    // anything it cannot cache (the search page, which a query string keeps out of
+    // the cache). Prefer the optimised copy — it is what twenty of the twenty-one
+    // pages actually load. The two are equivalent apart from minification; the one
+    // measurable difference it makes is documented in scripts/compare.mjs.
+    const optimised = href.includes('/litespeed/');
+    if (!map.has(id) || (optimised && !map.get(id).includes('/litespeed/'))) map.set(id, href);
   }
 }
 console.log(`${map.size} stylesheet handles`);

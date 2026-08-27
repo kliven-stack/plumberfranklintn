@@ -20,6 +20,18 @@ import { sendOwnerEmail, sendCustomerEmail, type LeadEmail } from '../lib/email'
 const REQUIRED = 'This field is required.';
 
 /**
+ * Every field arrives as text, and every one of them can arrive as `null`.
+ *
+ * That is Astro's form adapter, not the browser: an input the visitor left empty
+ * comes through as `null` rather than `""`, so a bare `z.string()` rejects it with
+ * "Expected string, received null" — which is not an error anyone should ever see
+ * on a contact form. Normalising here means the field-level messages below are the
+ * only ones that can reach the page.
+ */
+const text = <T extends z.ZodTypeAny>(schema: T) =>
+  z.preprocess((value) => (value == null ? '' : String(value).trim()), schema);
+
+/**
  * Gravity Forms' own validation, field for field.
  *
  * Name and Message are optional and Email / Phone / both selects are required —
@@ -27,26 +39,31 @@ const REQUIRED = 'This field is required.';
  * in the rendered markup, and it is reproduced rather than tightened. The select
  * values are pinned to the options the markup offers so a hand-built POST cannot
  * write arbitrary text into the client's inbox.
+ *
+ * Note that the *browser* enforces none of this. Gravity Forms marks its required
+ * fields with `aria-required` only, never the HTML `required` attribute, so an
+ * empty submit really does reach the server — on the WordPress site too. This is
+ * the validation, not a second line of it.
  */
 const schema = z.object({
-  name: z.string().trim().max(200).optional().default(''),
-  email: z.string().trim().min(1, REQUIRED).email('Please enter a valid email address.').max(320),
-  phone: z.string().trim().min(1, REQUIRED).max(50),
-  customerType: z.enum(
+  name: text(z.string().max(200)),
+  email: text(z.string().min(1, REQUIRED).email('Please enter a valid email address.').max(320)),
+  phone: text(z.string().min(1, REQUIRED).max(50)),
+  customerType: text(z.enum(
     ['Yes, I am a potential new customer', 'No, I am an existing customer', 'Neither'],
     { errorMap: () => ({ message: REQUIRED }) },
-  ),
-  emergency: z.enum(['Yes', 'No', 'Maybe'], { errorMap: () => ({ message: REQUIRED }) }),
-  message: z.string().trim().max(5000).optional().default(''),
+  )),
+  emergency: text(z.enum(['Yes', 'No', 'Maybe'], { errorMap: () => ({ message: REQUIRED }) })),
+  message: text(z.string().max(5000)),
 
   /** Gravity Forms' honeypot, kept and renamed. Never filled by a person. */
-  website: z.string().optional().default(''),
+  website: text(z.string()),
 
   /** Cloudflare Turnstile's response token, from the widget in the form. */
-  turnstileToken: z.string().optional().default(''),
+  turnstileToken: text(z.string()),
 
   /** Which page the form was submitted from, for triage. */
-  pagePath: z.string().max(300).optional().default(''),
+  pagePath: text(z.string().max(300)),
 });
 
 /** The confirmation Gravity Forms showed. See the README: unverifiable defaults. */

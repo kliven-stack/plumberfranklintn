@@ -7,8 +7,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { pages, type PageRecord } from '../lib/pages';
 
 export function getStaticPaths() {
-  // /404/ has its own route so Astro emits dist/404.html.
-  return pages.filter((page) => page.path !== '/404/').map((page) => ({
+  // /404/ and /search/ have routes of their own: the first so Astro emits
+  // dist/404.html, the second because its heading and title carry the search term
+  // and have to be filled in from the query string.
+  const OWN_ROUTE = new Set(['/404/', '/search/']);
+  return pages.filter((page) => !OWN_ROUTE.has(page.path)).map((page) => ({
     // Astro's rest param wants the path without the leading/trailing slash.
     params: { slug: page.path.replace(/^\/|\/$/g, '') || undefined },
     props: { page },

@@ -35,13 +35,16 @@ const REWRITES: Rewrite[] = [
     from: 'id="gform_wrapper_1"',
     to: 'id="gform_wrapper_1_inline"',
     why:
-      'The Book Appointment form is rendered twice on /contact-us/ — once in the ' +
-      'page body and once inside popup 189, which every page carries — so the ' +
-      'whole `gform_wrapper_1` / `gform_1` / `input_1_*` id tree exists twice in ' +
-      'one document. Duplicate ids mean every `<label for>` in the page copy ' +
-      'resolves to the popup copy instead, so clicking a label focuses a field the ' +
-      'user cannot see. This renames the outer wrapper; the field-level ids are ' +
-      'renamed by the companion rules below.',
+      'The Book Appointment form is rendered twice on /contact-us/ - once in the ' +
+      'page body and once inside popup 189, which every page carries - so the ' +
+      'whole `gform_wrapper_1` / `gform_1` / `input_1_*` id tree appears twice in ' +
+      'the served HTML. Nothing renders wrong today, because Elementor detaches ' +
+      'the popup template at init and /contact-us/ has no button that opens it, ' +
+      'so a browser never holds both copies at once. It is still invalid markup ' +
+      'that anything reading the source sees - a validator, a scraper, an ' +
+      'assistive tool working from the HTML - and it becomes a real bug the ' +
+      'moment somebody adds a Book Appointment button to that page. This renames ' +
+      'the outer wrapper; the field-level ids are renamed by the rules below.',
   },
   ...['1_1', '1_2', '1_3', '1_4', '1_5', '1_6', '1_8'].flatMap((n) => [
     {

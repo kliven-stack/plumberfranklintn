@@ -1,0 +1,46 @@
+---
+/**
+ * WordPress's search results page.
+ *
+ * `/?s=<term>` is a URL the WordPress site answers, so losing it after cutover
+ * would be a regression (playbook §1) — vercel.json rewrites it here, and the two
+ * search forms keep the `action="/"` WordPress gave them.
+ *
+ * What it renders is archive template 179, the same one the author archive uses,
+ * captured from production with a fixed probe term. The term is the only part of
+ * the page that varies, so it is put back in the browser rather than baked in:
+ * the heading, the input's value and the document title.
+ *
+ * **It always finds nothing, and that is production's behaviour.** The archive
+ * widget queries posts, and this site has none — every search on the WordPress site
+ * answers "It seems we can't find what you're looking for.", including searches for
+ * words that are plainly on the pages. It is cloned as-is and written up in the
+ * README's bug register; making it work would mean designing a results list the
+ * original never had.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { pages, fragment, type PageRecord } from '../lib/pages';
+
+const TERM = 'CLONE_SEARCH_TERM';
+const record = pages.find((p) => p.path === '/search/') as PageRecord;
+
+// Rendered with the placeholder emptied, so nothing flashes before the script runs.
+const content = fragment(record.content).split(TERM).join('');
+const page: PageRecord = { ...record, title: record.title.split(TERM).join('') };
+---
+
+<BaseLayout page={page}>
+  <Fragment set:html={content} />
+
+  <script is:inline>
+    (() => {
+      const term = new URLSearchParams(location.search).get('s') || '';
+      if (!term) return;
+      const heading = document.querySelector('.elementor-page-title .elementor-heading-title, h1.elementor-heading-title');
+      if (heading) heading.textContent = `Search Results for: ${term}`;
+      for (const input of document.querySelectorAll('input[name="s"]')) input.value = term;
+      // WordPress spells the title with typographic quotes; match it.
+      document.title = document.title.replace('“”', `“${term}”`);
+    })();
+  </script>
+</BaseLayout>
