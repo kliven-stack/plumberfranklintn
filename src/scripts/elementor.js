@@ -1200,6 +1200,36 @@ function initAnchors() {
 }
 
 /* ------------------------------------------------------------------ *
+ * Copyright year
+ *
+ * The footer reads "Copyright (c) 2026", and WordPress renders that year on every
+ * request - the site was built in 2020 and the text has kept up, so it is a
+ * dynamic value rather than something anyone typed.
+ *
+ * Baking it into a static page would quietly turn a self-maintaining line into one
+ * that goes stale next January: a regression the migration introduces rather than
+ * a bug it inherits. So the year is refreshed here. Nothing changes while the build
+ * is current - which is why `npm run compare` sees no difference - and the line
+ * keeps working if nobody redeploys for a year.
+ * ------------------------------------------------------------------ */
+function initCopyrightYear() {
+  const year = String(new Date().getFullYear());
+  for (const widget of document.querySelectorAll('.footer-alright-custom')) {
+    // Walked as text nodes rather than rewritten as innerHTML: the same element
+    // holds the "WEBSITE CRAFTED BY" credit link, and replacing the markup would
+    // rebuild that anchor for no reason.
+    const walker = document.createTreeWalker(widget, NodeFilter.SHOW_TEXT);
+    for (let node = walker.nextNode(); node; node = walker.nextNode()) {
+      const updated = node.nodeValue.replace(
+        /(Copyright\s*©\s*)(\d{4})/,
+        (whole, prefix, printed) => (printed === year ? whole : prefix + year),
+      );
+      if (updated !== node.nodeValue) node.nodeValue = updated;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ *
  * Trailing nodes
  *
  * Elementor appends two elements to <body> on init:
@@ -1254,5 +1284,6 @@ onReady(() => {
   initPopups();
   initLightbox();
   initAnchors();
+  initCopyrightYear();
   initTrailingNodes();
 });

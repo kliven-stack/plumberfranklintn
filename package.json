@@ -21,7 +21,8 @@
     "functional": "node scripts/functional.mjs",
     "audit": "node scripts/audit.mjs",
     "form": "node scripts/form-tests.mjs",
-    "probe": "node scripts/probe.mjs"
+    "probe": "node scripts/probe.mjs",
+    "sweep": "node scripts/audit-site.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",

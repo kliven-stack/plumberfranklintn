@@ -14,19 +14,19 @@ node_modules/
 .DS_Store
 *.log
 
-# crawl cache — regenerate with `npm run crawl`
+# crawl cache — regenerate with `npm run crawl` / `npm run probe`
 _extract/html/
 _extract/live-dom/
+_extract/sweep-done
+
+# `_extract/probe/` IS tracked: those scripts are the evidence behind every DOM
+# contract src/scripts/elementor.js reproduces, and the code cites them by name.
 
 # measurement output — regenerate with `npm run compare`
 _extract/compare-*.json
 _extract/dump-*.json
 _extract/spot-*.json
-_extract/probe/
 
 # `_extract/crawl-manifest.json` and `_extract/assets.json` ARE tracked: they
 # record what the crawl found and what the mirror pulled, which is the provenance
 # of everything in src/fragments/ and public/wp-content/.
-
-# probe scripts are scratch — the contracts they found are documented in the code
-_extract/probe/

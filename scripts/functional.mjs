@@ -540,6 +540,14 @@ const open = async (target, width = 1440, height = 900) => {
     globals.probe && globals.symbols);
   check('globals: the home page raises no JavaScript errors',
     errors.length === 0, errors.join(' | '));
+
+  // WordPress renders the footer's copyright year on every request; a static build
+  // would freeze it. src/scripts/elementor.js keeps it current.
+  const year = await page.evaluate(() =>
+    document.querySelector('.footer-alright-custom')?.textContent.match(/Copyright\s*\u00a9\s*(\d{4})/)?.[1]);
+  check("footer: the copyright year is the current one, not the build's",
+    year === String(new Date().getFullYear()), year);
+
   await ctx.close();
 }
 
