@@ -16,6 +16,10 @@ for (const pattern of ['**://maps.google.com/**', '**://www.google.com/maps/**',
 }
 const p = await ctx.newPage();
 p.on('pageerror', (e) => console.log('  [pageerror]', String(e).split('\n')[0]));
+p.on('console', (m) => { if (m.type() === 'error' || m.type() === 'warning') console.log(`  [console.${m.type()}]`, m.text().slice(0, 200)); });
+p.on('requestfailed', (r) => console.log('  [requestfailed]', r.url().slice(0, 120), '-', r.failure()?.errorText));
+p.on('request', (r) => { if (r.url().includes('_actions') || r.url().includes('turnstile')) console.log('  [request]', r.method(), r.url()); });
+p.on('response', (r) => { if (r.url().includes('_actions') || r.url().includes('turnstile')) console.log('  [response]', r.status(), r.url()); });
 
 await p.goto(`${ORIGIN}/contact-us/`, { waitUntil: 'domcontentloaded', timeout: 60000 });
 await p.waitForTimeout(2500);
@@ -34,12 +38,12 @@ await p.selectOption('form[data-contact-form] [name="customerType"]', 'Neither')
 await p.selectOption('form[data-contact-form] [name="emergency"]', 'No');
 await p.fill('form[data-contact-form] [name="message"]', 'Deployment check from the migration harness. Not a real enquiry.');
 
-const res = p.waitForResponse((r) => r.url().includes('/_actions/'), { timeout: 20000 }).catch(() => null);
+const res = p.waitForResponse((r) => r.url().includes('/_actions/'), { timeout: 45000 }).catch(() => null);
 await p.click('form[data-contact-form] [type="submit"]');
 const response = await res;
 console.log('action response:', response ? `${response.status()} ${response.url()}` : 'no request seen');
 
-await p.waitForTimeout(2500);
+await p.waitForTimeout(3000);
 console.log('what the visitor is shown:', await p.evaluate(() => ({
   confirmation: document.querySelector('.gform_confirmation_message')?.textContent.trim() ?? null,
   banner: document.querySelector('.gform_validation_errors:not([hidden])')?.textContent.trim() ?? null,
